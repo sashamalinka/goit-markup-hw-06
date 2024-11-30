@@ -51,6 +51,26 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burgericon-1"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -62,7 +82,7 @@
           </button>
         </div>
       </section>
-      <section class="title-section" id="opportunities">
+      <section class="title-section hidden" id="opportunities">
         <div class="container">
           <h2 class="title-h visually-hidden">заголовок скритий</h2>
           <ul class="title-list">
@@ -117,7 +137,7 @@
           </ul>
         </div>
       </section>
-      <section class="team" id="team">
+      <section class="team hidden" id="team">
         <div class="container">
           <h2 class="team-h">Our Team</h2>
           <ul class="team-list">
@@ -376,7 +396,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio-heading" id="Portfolio">
+      <section class="portfolio-heading hidden" id="Portfolio">
         <div class="container">
           <h2 class="portfolio-ul">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -498,7 +518,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container">
         <div class="container-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -563,7 +583,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop is-open hidden" data-modal>
       <div class="modal">
         <button class="btn-modal-close" type="button" data-modal-close>
           <svg class="btn-icon" width="8" height="8">
