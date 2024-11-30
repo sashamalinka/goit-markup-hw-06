@@ -225,7 +225,7 @@ button {
 .benefits {
   background-color: #2e2f42;
   padding: 72px 0;
-  padding-bottom: 96px;
+  padding-bottom: 72px;
   max-width: 320px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -292,6 +292,25 @@ button {
   .benefints-button:focus {
     background-color: #404bbf;
   }
+}
+
+.title-section {
+  padding: 120px 0;
+}
+
+.title {
+  width: calc((100% - 72px) / 4);
+}
+.title-icon {
+  display: none;
+}
+
+.title-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
+  max-width: 288px;
 }
 
 /* mobile menu */
