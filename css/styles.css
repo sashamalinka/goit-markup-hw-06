@@ -250,20 +250,19 @@ button {
 }
 
 .benefints-button {
-  margin: auto;
   border-radius: 4px;
-  border: none;
+  padding: 16px 32px;
+  width: 170px;
   height: 56px;
-  min-width: 169px;
-  display: block;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  display: block;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,12 +293,17 @@ button {
   }
 }
 
+/* title */
+
 .title-section {
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .title {
-  width: calc((100% - 72px) / 4);
+  width: 264px;
+  margin-bottom: 72px;
+  width: 100%;
 }
 .title-icon {
   display: none;
@@ -307,10 +311,90 @@ button {
 
 .title-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  gap: 72px;
-  max-width: 288px;
+  align-items: center;
+}
+
+.subtitle-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .title-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .title {
+    margin-bottom: 0;
+    width: calc((100% - 24px) / 2);
+  }
+  .title-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 72px 24px;
+  }
+  .subtitle-text {
+    text-align: left;
+  }
+  .title-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .title-section {
+    padding: 120px 0;
+  }
+  .title {
+    width: calc((100% - 72px) / 4);
+  }
+  .title-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+  .title-list {
+    display: flex;
+    gap: 24px;
+  }
+  .subtitle-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+
+  .title-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
 }
 
 /* mobile menu */
