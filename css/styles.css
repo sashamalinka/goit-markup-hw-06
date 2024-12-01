@@ -316,7 +316,7 @@ button {
   gap: 24px;
 }
 
-.mobile-menu-addres-link {
+.mobile-menu-address-link {
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
@@ -328,12 +328,12 @@ button {
 .mobile-menu-address {
   margin-bottom: 48px;
 }
-.mobile-menu-addres-link.tel {
+.mobile-menu-address-link.tel {
   color: #4d5ae5;
 }
 
-.mobile-menu-addres-link:hover,
-.mobile-menu-addres-link:focus {
+.mobile-menu-address-link:hover,
+.mobile-menu-address-link:focus {
   color: #4d5ae5;
 }
 
