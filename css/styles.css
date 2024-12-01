@@ -1114,6 +1114,7 @@ button {
 
 .modal-input {
   margin-bottom: 8px;
+  position: relative;
 }
 
 .modal-comment {
@@ -1129,11 +1130,12 @@ button {
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.modal-label {
-  position: relative;
 }
 .icon-person {
   position: absolute;
@@ -1194,7 +1196,7 @@ input:checked + label > span {
 }
 
 .checkbox-link {
-  line-height: 1.33333;
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
@@ -1218,4 +1220,11 @@ input:checked + label > span {
   margin: auto;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
