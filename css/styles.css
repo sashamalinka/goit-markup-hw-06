@@ -506,8 +506,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 
   .team-list {
@@ -764,9 +763,97 @@ button {
   cursor: pointer;
 }
 
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: #404bbf;
+}
+
 .icon-subscribe {
   margin-left: 16px;
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 72px 24px;
+    align-content: center;
+    max-width: 584px;
+  }
+  .container-logo {
+    width: 264px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+  }
+
+  .container-footer-social {
+    text-align: center;
+    margin: 0;
+  }
+
+  .paragraf-social {
+    display: flex;
+    align-items: normal;
+    text-align: left;
+  }
+
+  .paragraf-email {
+    display: flex;
+    align-items: normal;
+  }
+
+  .paragraf-input {
+    width: 264px;
+  }
+  .paragraf-form {
+    margin-left: 0;
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .btn-subscribe {
+    margin-left: 24px;
+    margin-right: 0;
+  }
+
+  .paragraf-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .page-footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: unset;
+    min-width: 1158px;
+  }
+
+  .container-logo {
+    margin-right: 120px;
+  }
+
+  .paragraf-email {
+    margin-left: auto;
+    align-items: normal;
+  }
 }
 
 /* mobile menu */
