@@ -383,7 +383,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-page/Dark-bgmob@2x.jpg);
 }
 
 .benefints-title {
@@ -417,6 +417,11 @@ button {
   .benefits {
     padding: 112px 0;
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-page/Dark-bgtab@1x.jpg);
   }
   .benefints-title {
     margin: 0 auto 36px;
@@ -425,11 +430,36 @@ button {
     line-height: 1.07;
   }
 }
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .benefits {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-page/Dark-bgtab@2x.jpg);
+  }
+}
 
 @media screen and (min-width: 1158px) {
   .benefits {
     padding: 188px 0;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-page/people-officedesk@1x.jpg);
+  }
+  @media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .benefits {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-page/people-officedesk@2x.jpg);
+    }
   }
 
   .benefints-title {
@@ -888,7 +918,8 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
   color: #ffffff;
   margin-bottom: 16px;
 }
@@ -1003,11 +1034,13 @@ button {
     align-items: normal;
   }
 
-  ::placeholder {
-    font-weight: 400;
+  .paragraf-form {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    opacity: 1;
+  }
+  .paragraf-form::placeholder {
     color: #fff;
   }
 }
