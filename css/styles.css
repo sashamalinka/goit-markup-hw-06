@@ -281,7 +281,7 @@ button {
 }
 
 .mobile-menu-nav {
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-nav-list {
@@ -471,13 +471,15 @@ button {
 /* title */
 
 .title-section {
-  padding-top: 96px;
+  padding: 96px 0;
 }
 
 .title {
-  width: 264px;
-  margin-bottom: 72px;
-  width: 100%;
+  padding-bottom: 72px;
+}
+
+.title:last-child {
+  padding-bottom: 0;
 }
 .title-icon {
   display: none;
@@ -573,13 +575,11 @@ button {
 
 /* Our Team */
 .team {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #f4f4fd;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-h {
-  padding-top: 96px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -605,7 +605,6 @@ button {
   max-width: 264px;
 }
 .team-name {
-  margin-bottom: 8px;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -720,7 +719,7 @@ button {
 }
 
 .portfolio-text {
-  max-width: 288px;
+  max-width: 100%;
   overflow: hidden;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -786,8 +785,9 @@ button {
     justify-content: center;
     gap: 48px 24px;
   }
+
   .portfolio-text {
-    max-width: 356px;
+    max-width: calc((100% - 24px) / 2);
   }
 }
 
@@ -841,6 +841,7 @@ button {
   width: 208px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 72px;
 }
 .paragraf-social {
   font-weight: 500;
@@ -860,7 +861,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 .social-item-footer {
   width: 40px;
@@ -1216,6 +1216,7 @@ button {
 }
 
 .checkbox-span {
+  flex-shrink: 0;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: inline-flex;
@@ -1230,7 +1231,7 @@ button {
   margin-right: 8px;
 }
 
-input:checked + label > span {
+.checkbox-input:checked + .checkbox-label > .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
