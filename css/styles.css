@@ -475,12 +475,13 @@ button {
 }
 
 .title {
-  padding-bottom: 72px;
+  width: 288px;
 }
 
 .title:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
+
 .title-icon {
   display: none;
 }
@@ -489,6 +490,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 72px;
 }
 
 .subtitle-text {
@@ -516,7 +518,6 @@ button {
   }
 
   .title {
-    margin-bottom: 0;
     width: calc((100% - 24px) / 2);
   }
   .title-list {
